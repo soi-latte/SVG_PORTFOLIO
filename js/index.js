@@ -529,7 +529,13 @@ document.addEventListener('DOMContentLoaded', () => {
     gsap.to(heartPath, {
         strokeDashoffset: 0,
         duration: 2,
-        ease: 'power2.inOut'
+        ease: 'power2.inOut',
+        scrollTrigger: {
+            targets: heartPath,
+            start: 'top top',
+            end: 'bottom bottom',
+            makers: true
+        }
     });
 });
 
