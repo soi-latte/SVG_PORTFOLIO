@@ -1,0 +1,191 @@
+@font-face {
+    font-family: 'PyeongChangPeace-Light';
+    src: url('https://cdn.jsdelivr.net/gh/fontbee/font@main/Pc/PyeongChangPeace-Light.woff2') format('woff2');
+    font-weight: 300;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'PyeongChangPeace-Bold';
+    src: url('https://cdn.jsdelivr.net/gh/fontbee/font@main/Pc/PyeongChangPeace-Bold.woff2') format('woff2');
+    font-weight: 700;
+    font-style: normal;
+}
+
+
+
+:root {
+    --text-color: #fff;
+    --text-size: 14px;
+    --point-color: #111;
+    --h-color: #fff;
+    --border-color: #f0f0f0;
+    --box-bg-color: #f0f0f0;
+    --set-margin: 0;
+    --set-gap: 4vw;
+    --comm-pad: 2rem;
+    --comm-pad2: 2rem;
+}
+
+
+html{
+}
+body {
+    overflow-x: hidden;
+    height: unset;
+    position: relative;
+    background-color: var(--point-color); background-image: url('../img/noise.png'); background-size: 200px auto;
+}
+html, body {
+    color: var(--text-color); font-size: var(--text-size);
+    font-family: 'scale-variable', 'source-han-sans-korean', sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-variation-settings: 'wdth' 100, 'wght' 400; }
+body.menuOpen {overflow: hidden;}
+html.menuOpen {overflow: hidden;}
+body.loading {overflow: hidden;}
+
+
+#header {width: 100%; position: fixed; top: 0; left: 0; z-index: 2009; padding: var(--comm-pad); box-sizing: border-box;}
+#header h1 { display: inline-block; font-size: clamp(2.285rem, 4vw, 4vw); transition: all 0.3s ease-out; line-height: 1.2;}
+#header h1,
+#header button {}
+
+#header.active h1 { font-size: clamp(2.285rem, 4vw, 4vw); }
+
+#footer {width: 100%; padding: var(--comm-pad); box-sizing: border-box; text-align: center; }
+#footer .copy {opacity: 0.7; font-variation-settings: 'wdth' 135, 'wght' 200;}
+
+
+
+#openMenu {width: 4vw; height: 4vw; display: flex; flex-direction: column; justify-content: space-around; min-width: 36px; min-height: 36px; border: 0; padding: 0; margin: 0;  outline: 0;  position: fixed; right: 2rem; top: 2rem; z-index: 3300;  mix-blend-mode: difference;}
+#openMenu i {display: block; width: 100%; height: 4px; background: #fff; }
+#openMenu.close {justify-content: center; align-items: center; }
+#openMenu.close i:nth-of-type(2) {opacity: 0;}
+#openMenu.close i:first-of-type {transform: rotate(45deg) translateX(3px) translateY(3px);}
+#openMenu.close i:last-of-type {transform: rotate(-45deg) translateX(3px) translateY(-3px);}
+#mMenu.show {opacity: 1; visibility: visible;}
+/*
+#openMenu.close {background: red !important;  }
+
+#header.bg-active #openMenu {background: var(--primary-color);}
+#header.first-active #openMenu {background: red;}
+*/
+
+#mMenu {color:var(--point-color); width: 100%; max-height: 100vh; min-height: 100vh; overflow-y: auto; background: #fff; background-image: url('../img/noise.png'); background-size: 200px auto; position: fixed; top: 0; right: 0; box-sizing: border-box; padding: 6rem 0; z-index: 3200; opacity: 0; visibility: hidden; transition: all 0.3s ease-out;}
+#mMenu::before {content: '(MENU)'; padding: 1rem 2rem; box-sizing: border-box; display: block; font-size: clamp(1rem, 1.5vw, 1.5vw); }
+#mMenu .gnb {width: 100%;}
+#mMenu .gnb li {width: 100%; }
+#mMenu .gnb li a {font-size: clamp(1.953rem, 4vw, 4vw); display: block; padding: 2rem; box-sizing: border-box; border-top: 1px solid var(--border-color); transition: background-color 0.3s ease-out, font-variation-settings 0.3s ease-out; background: transparent; }
+#mMenu .gnb li:last-of-type a {border-bottom: 1px solid var(--border-color);}
+#mMenu .gnb li a:hover {background: #585858; color: #fff;}
+
+
+@media screen and (min-width: 769px) {
+     :root {
+         --text-size: 16px;
+         --comm-pad: 2vw 3vw;
+         --comm-pad2: 3vw;
+     }
+    #header {}
+    #header h1,
+    #header button {}
+    #header h1 {font-size: clamp(2.8rem, 2vw, 2vw); }
+    #header.active h1 {font-size: clamp(2.8rem, 4vw, 4vw);}
+
+    #footer .copy {font-size: clamp(1rem, 1vw, 1vw);}
+
+    #mMenu {padding: 6vw 0; box-sizing: border-box; }
+    #mMenu::before {padding: 1vw 3vw;}
+    #mMenu .gnb li a {padding: 2vw 3vw; }
+    #openMenu {right: 3vw; top: 2vw; min-width: 4vw; min-height: 4vw; max-width: 3.5rem; max-height: 3.5rem;}
+    #openMenu.header-active {min-width: 2vw; min-height: 2vw; width: 2vw; height: 2vw;}
+    #openMenu i {height: 0.3vw; }
+    #openMenu.close {right: 3vw; top: 2vw;}
+    #openMenu.close i:first-of-type {transform: rotate(45deg) translateX(0.2vw) translateY(0.2vw);}
+    #openMenu.close i:last-of-type {transform: rotate(-45deg) translateX(0.2vw) translateY(-0.2vw);}
+
+
+
+}
+
+.char-wrap {
+    display: inline-block;
+    position: relative;
+    overflow: hidden;
+}
+
+.splitting .word {
+    white-space: nowrap;
+    display: inline-block;
+}
+
+.splitting .char {
+    animation: slide-in 1s cubic-bezier(.5, 0, .5, 1) both;
+    animation-delay: calc(60ms * var(--char-index));
+    display: inline-block;
+}
+
+.char-wrap {
+    display: inline-block;
+    position: relative;
+    overflow: hidden;
+}
+
+.font-upper {
+    text-transform: uppercase;
+}
+
+.font-sub {
+    font-size: 5vw;
+    margin-top: 2rem;
+    display: block;
+}
+
+.splitting .font-sub .word {
+    display: grid;
+    grid-auto-flow: column;
+}
+
+
+
+
+.loading::before,
+.loading::after {
+    content: '';
+    position: fixed;
+    z-index: 5000;
+}
+
+.loading::before {
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: var(--point-color);
+}
+
+.loading::after {
+    top: 50%;
+    left: 50%;
+    width: 60px;
+    height: 60px;
+    margin: -30px 0 0 -30px;
+    border-radius: 50%;
+    opacity: 0.4;
+    background: #fff;
+    animation: loaderAnim 0.7s linear infinite alternate forwards;
+}
+
+
+@keyframes loaderAnim {
+    to {
+        opacity: 1;
+        transform: scale3d(0.5,0.5,1);
+    }
+}
+
+
+svg#heart {
+    filter: drop-shadow(0 0 10px rgba(255, 255, 255, 0.5));
+}

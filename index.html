@@ -1,0 +1,410 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta property="og:title" content="hello soyworld"/>
+    <meta property="og:type" content="article"/>
+    <meta property="og:url" content=""/>
+    <meta property="og:description" content="This is parksoi UI/UX portfolio website."/>
+    <meta property="og:image" content=""/>
+    <meta property="og:image:width" content=""/>
+    <meta property="og:image:height" content=""/>
+    <link rel="stylesheet" href="./css/adobeVariable.css">
+    <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="./css/comm.css">
+    <link rel="stylesheet" href="./css/main.css">
+    <title></title>
+    <script>
+        (function (d) {
+            var config = {
+                    kitId: 'clv1nlg',
+                    scriptTimeout: 3000,
+                    async: true
+                },
+                h = d.documentElement, t = setTimeout(function () {
+                    h.className = h.className.replace(/\bwf-loading\b/g, "") + " wf-inactive";
+                }, config.scriptTimeout), tk = d.createElement("script"), f = false,
+                s = d.getElementsByTagName("script")[0], a;
+            h.className += " wf-loading";
+            tk.src = 'https://use.typekit.net/' + config.kitId + '.js';
+            tk.async = true;
+            tk.onload = tk.onreadystatechange = function () {
+                a = this.readyState;
+                if (f || a && a != "complete" && a != "loaded") return;
+                f = true;
+                clearTimeout(t);
+                try {
+                    Typekit.load(config)
+                } catch (e) {
+                }
+            };
+            s.parentNode.insertBefore(tk, s)
+        })(document);
+    </script>
+    <script src="./js/imagesloaded.pkgd.min.js"></script>
+    <script src="./js/gsap.min.js"></script>
+    <script src="./js/scrollTrigger.min.js"></script>
+    <script src="./js/scrollToPlugin.min.js"></script>
+    <script src="./js/splitting.min.js"></script>
+    <script src="./js/index.js"></script>
+</head>
+<body class="loading">
+<div class="wrap" id="wrap">
+    <header id="header">
+        <h1><span>I am&nbsp;</span><b>Soi</b>
+        </h1>
+        <div id="mMenu">
+            <ul class="gnb">
+                <li><a href="#mainVisual">Main</a></li>
+                <li><a href="#works">Works</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#goal">Goal</a></li>
+                <li><a href="#contactMe">Contact</a></li>
+            </ul>
+        </div>
+    </header>
+    <main id="smooth-wrapper" data-scroll-container>
+        <button id="openMenu" type="button"><span class="blind">메뉴열기</span> <i></i><i></i><i></i></button>
+        <section id="mainVisual" class="main-section">
+            <div class="align-center">
+                <h2>P<span>a</span>rk Soi</h2>
+                <h3>UI/UX PORTFOLIO</h3>
+                <svg id="heart" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="200" height="200">
+                    <defs>
+                        <linearGradient id="metalGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+                            <stop offset="0%" style="stop-color:#c0c0c0; stop-opacity:1" />
+                            <stop offset="50%" style="stop-color:#ffffff; stop-opacity:1" />
+                            <stop offset="100%" style="stop-color:#c0c0c0; stop-opacity:1" />
+                        </linearGradient>
+                    </defs>
+                    <path id="heartPath" d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41 1.01 4.5 2.09C13.09 4.01 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z"
+                          fill="none" stroke="url(#metalGradient)" stroke-width="2" />
+                </svg>
+            </div>
+            <div class="align-end"><p>Please scroll vertically <br> to fully experience <br> the animations.</p></div>
+        </section>
+        <section id="works" class="main-section">
+            <div class="sticky-element">
+                <div class="track">
+                    <div class="track-flex">
+                        <div class="pj-box first-box">
+                            <div class="txt-box"><h2>my Work <br> and my Job</h2></div>
+                        </div>
+                        <div class="pj-box">
+                            <img src="./img/mixing-img1.jpg" alt="모니터 이미지">
+                            <span class="pj-txt">Web Solutions</span>
+                        </div>
+                        <div class="pj-box">
+                            <img src="./img/mixing-img2.jpg" alt="">
+                            <span class="pj-txt">Hybrid Web/App Project</span>
+                        </div>
+                        <div class="pj-box">
+                            <img src="./img/mixing-img3.jpg" alt="차트이미지">
+                            <span class="pj-txt">Monitoring Dashboard</span>
+                        </div>
+                        <div class="pj-box">
+                            <img src="./img/mixing-img4.jpg" alt="사무실이미지">
+                            <span class="pj-txt">Smart Factory ERP & MES</span>
+                        </div>
+                        <div class="pj-box">
+                            <img src="./img/mixing-img5.jpg" alt="리뉴얼-펜 이미지">
+                            <span class="pj-txt">Renewal Project</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="about" class="main-section">
+            <div class="about-wrap">
+                <div class="about-content content--sticky content--half">
+                    <div class="img">
+                        <img src="./img/about/parksoi2.jpg" alt="">
+                    </div>
+                </div>
+                <div class="about-content content--sticky content--half">
+                    <div class="about-txt">
+                        <h2>안녕하세요!</h2>
+                        <p>제 등산 사진 어떤가요? 국기가 너무 멋지지 않나요? 국기를 게양할 수 있는 깃대가 세워진 봉우리를 '국기봉'이라고 합니다. 보통 등산로 입구에서 가장 가까운 봉우리이기도 합니다. 시간 날 때마다 틈틈히 국기봉을 찍고 돌아오고 있습니다. 거창한 취미는 아니지만 꾸준히 즐길 수 있고 스트레스 해소에도 정말 제격입니다. 업무모드가 'OFF' 상태일 때 제가 어떻게 보내고 있는지 소개하고자 합니다.</p>
+                    </div>
+
+                </div>
+                <div class="about-content content--sticky content--half">
+                    <div class="img">
+                        <img src="./img/about/parksoi5.jpg" alt="">
+                    </div>
+                </div>
+                <div class="about-content content--sticky content--half">
+                    <div class="about-txt">
+                        <h2>취미가 등산이 된 이유</h2>
+                        <p>처음부터 등산이 좋았던 것은 아니었습니다. 등산하려고 마음 먹는 것이 가장 힘들었습니다. 어찌저찌 참고 다녀보니 결국 '나' 자신을 더 힘들게 하는 것은 그 태도 때문이라는 것을 알게 되었습니다. 마음가짐에 대해 반성하고 돌아보는 시간을 많이 가지게 되었습니다. 40kg 정도를 감량하면서 등산을 정말 꾸준히 다녔습니다. 지금은 제가 살아가는 원동력이기도 합니다. 생각 정리도 잘 되고 다녀오면 마음이 편안해집니다.</p>
+                    </div>
+                </div>
+                <div class="about-content content--sticky content--half">
+                    <div class="img">
+                        <img src="./img/about/parksoi4.jpg" alt="">
+                    </div>
+                </div>
+                <div class="about-content content--sticky content--half">
+                    <div class="about-txt">
+                        <h2>일과 삶의 균형에 대해</h2>
+                        <p>저에게는 인생에 명확한 목표가 하나 있습니다. '하나를 알려줘도 똑부러지게 제대로 알려주는 사람이 되는 것입니다.' 그 목표는 업무적으로서 멋진 사수가 되는 부분도 포함되어 있습니다.</p>
+
+                        <p>이 일을 지치지 않고 오래, 잘 해내고 싶습니다. 밸런스를 찾아 균형있게 이뤄나가고 싶습니다.</p>
+
+                        <p>업무모드 'ON' 일 때: 효율성 있는 방식으로 업무 접근하기!</p>
+                        <p>업무모드 'OFF' 일 때: 진짜 OFF!가 될 수 있도록 타협하기!</p>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <section id="goal" class="main-section">
+            <div class="intro">
+                <h2 class="intro__title">
+                    <span class="intro__title-pre">My Goals</span>
+                    <span class="intro__title-sub">퍼블리셔로서 임하는 자세</span>
+                </h2>
+            </div>
+
+            <div class="to-content">
+                <h3 class="content__title" data-splitting data-effect1>
+                    <span>Comfort</span>
+                    <span>Zone</span>
+                </h3>
+                <p> 업무를 하면서 UI를 고려할 때는 익숙하다는 그 엄청난 가치를 중시합니다.</p>
+                <p> 사용자에게 익숙한 UI/UX 제공은 가장 기본이자 최우선이라고 보고있습니다.</p>
+            </div>
+
+<!--            <div class="to-content">-->
+<!--                <h3 class="content__title" data-splitting data-effect2>-->
+<!--                    <span>Lasting</span>-->
+<!--                    <span>Impact</span>-->
+<!--                </h3>-->
+<!--                <p>제가 만든 페이지를 이용해주시는 분들께 긍정적인 경험만을 선사하고 싶지만 그렇지 못한 어려움도 존재합니다. </p>-->
+<!--                <p>불쾌한 경험으로만 남지 않도록 오류를 줄이려 노력하고, 심미적인 요소를 고려하고 있습니다.</p>-->
+<!--            </div>-->
+
+            <div class="to-content">
+                <h3 class="content__title" data-splitting data-effect3>
+                    <span>Trouble</span>
+                    <span>Shooter</span>
+                </h3>
+                <p>
+                    <b>"마이그레이션을 진행할 때 화면이 깨지거나 기술적 이슈로 갈등을 겪는 상황이 있으신가요? 어떻게 해결하시나요?"</b>
+                </p>
+                <p>퍼블리셔로서 매일 직면하는 부분입니다. 저는 그럴때마다 팀원의 의견을 듣고 놓치고 있는 것은 없는지 확인합니다.</p>
+                <p>디자인과 개발 그 단계에서 일어날 수 있는 갈등은 최대한 소통으로 풀어나가고자 합니다.</p>
+            </div>
+        </section>
+        <section id="contactMe" class="main-section">
+            <div class="inner-header contact-header">
+                <h3 class="email-h2" data-splitting data-effect4>
+                    <span>Thank you for your time</span>
+                </h3>
+                <a class="mail" href="mailTo:puiux@kakao.com"><h2 class="email-h2" data-splitting data-effect4><span>puiux@kakao.com</span>
+                </h2></a>
+                <div class="contact-info">
+                    <p>Created by Park Soi</p>
+                    <ul class="footer-lst">
+                        <li><a href="https://www.notion.so/4da1d32eda6a4b989ac9cb8e87913779" target="_blank">Notion</a>
+                        </li>
+                        <li><a href="https://github.com/soi-latte" target="_blank">Github</a></li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+    </main>
+    <div class="pj-modal-wrap">
+        <div class="modal-1 view-2">
+            <div class="modal-view">
+                <button type="button" class="modal-cls">본문으로 돌아가기</button>
+                <div class="project-title">
+                    <h3>Web Solutions</h3>
+                    <div class="chips">
+                        <b>Keywords:</b>
+                        <span>Php</span>
+                        <span>Html</span>
+                        <span>Css</span>
+                        <span>Js</span>
+                        <span>J-query</span>
+                        <span>Board Publishing</span>
+                        <span>Form Publishing</span>
+                        <span>Responsive</span>
+                        <span>Cafe24</span>
+                    </div>
+                    <p>에이전시에서 근무하며 다양한 웹 솔루션을 제작했습니다. 쇼핑몰, 온라인 강의 플랫폼, 협회 및 학회용 시스템의 사용자 인터페이스를 제작했습니다. 주로 사용자 페이지인
+                        회원가입, 아이디 찾기 페이지나 게시판, 리뷰작성 등의 폼들이 있습니다. 제 역할은 퍼블리싱에 집중하여 화면의 시각적 요소와 상호작용을 원활하게 구현하는
+                        것이었습니다. 여러 프로젝트에 참여하며 폭넓은 경험을 쌓았습니다.</p>
+                    <p class="title-date">프로젝트 제작기간: 2023 ~ 2024</p>
+                </div>
+                <div class="project-grid solution-grid">
+                    <div class="col a"><img src="./img/solution/00.png" alt="웹솔루션 제작"></div>
+                    <div class="col b"><img src="./img/solution/01.png" alt="웹솔루션 제작"><img src="./img/solution/011.png" alt="웹솔루션 제작"><img
+                            src="./img/solution/012.png" alt="웹솔루션 제작"></div>
+                    <div class="col c"><img src="./img/solution/02.png" alt="웹솔루션 제작"></div>
+                    <div class="col d"><img src="./img/solution/03.png" alt="웹솔루션 제작"></div>
+                    <div class="col e"><img src="./img/solution/04.png" alt="웹솔루션 제작"></div>
+                    <div class="col f"><img src="./img/solution/05.png" alt="웹솔루션 제작"></div>
+                </div>
+            </div>
+        </div>
+        <div class="modal-2 view-2">
+            <div class="modal-view">
+                <button type="button" class="modal-cls">본문으로 돌아가기</button>
+                <div class="project-title">
+                    <h3>Hybrid Web/App Project</h3>
+                    <div class="chips">
+                        <b>Keywords:</b>
+                        <span>Php</span>
+                        <span>Css</span>
+                        <span>Js</span>
+                        <span>J-query</span>
+                        <span>Mobile Web-view</span>
+                        <span>safe-area</span>
+                    </div>
+                    <p>
+                        반려동물이 있는 사용자들을 위한 하이브리드 웹/앱 프로젝트에 참여했습니다. 이 앱에서는 브리더 인터뷰를 담은 기사, 사용자들의 스냅샷, 팔로우
+                        기능을 포함한 인스타그램 형식의 피드를 퍼블리싱했습니다. 2차로 상점을 오픈하게 되어 쇼핑몰의 전반적인 퍼블리싱도 참여했습니다. Flutter 언어를 사용하는
+                        외주업체와 협업하여 앱으로 출시되었고, 출시 과정에서 모바일 웹뷰 이슈를 해결하는 부분을 담당했습니다.
+                    </p>
+                    <p class="title-date">프로젝트 제작기간: 2022 ~ 2023</p>
+                </div>
+                <div class="project-grid hybrid-grid">
+                    <div class="project-img">
+                        <img src="./img/hybrid/img_2000.png" alt="하이브리드웹/앱 프로젝트"/>
+                        <img src="./img/hybrid/img_2001.png" alt="하이브리드웹/앱 프로젝트"/>
+                        <img src="./img/hybrid/img_2002.png" alt="하이브리드웹/앱 프로젝트"/>
+                        <img src="./img/hybrid/img_2003.png" alt="하이브리드웹/앱 프로젝트"/>
+                        <img src="./img/hybrid/img_2004.png" alt="하이브리드웹/앱 프로젝트"/>
+                        <img src="./img/hybrid/img_2005.png" alt="하이브리드웹/앱 프로젝트"/>
+                        <img src="./img/hybrid/img_2006.png" alt="하이브리드웹/앱 프로젝트"/>
+                        <img src="./img/hybrid/img_2007.png" alt="하이브리드웹/앱 프로젝트"/>
+                        <img src="./img/hybrid/img_2008.png" alt="하이브리드웹/앱 프로젝트"/>
+                        <img src="./img/hybrid/img_2009.png" alt="하이브리드웹/앱 프로젝트"/>
+                        <img src="./img/hybrid/img_2010.png" alt="하이브리드웹/앱 프로젝트"/>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="modal-3 view-2">
+            <div class="modal-view">
+                <button type="button" class="modal-cls">본문으로 돌아가기</button>
+                <div class="project-title">
+                    <h3>Monitoring Dashboard</h3>
+                    <div class="chips">
+                        <b>Keywords:</b>
+                        <span>Vue.js</span>
+                        <span>Typescript</span>
+                        <span>Vuetify</span>
+                        <span>Sass & Scss</span>
+                        <span>Responsive</span>
+                        <span>Ajax</span>
+                        <span>Dashboard Publishing</span>
+                    </div>
+                    <p>
+                        스마트 팩토리 프로젝트에서 생산현장 작업자들을 위한 모니터링 대시보드를 제작했습니다. 이 대시보드는 사용자들이 양품률, 불량품률, 현재 가동 중인 설비 및 가동
+                        중지된 설비 등을 확인할 수 있습니다. 이 대시보드들은 대부분 큰 화면에서 보기 쉽게 폰트 크기에 vw 단위를
+                        적용하고, 다양한 차트를 사용하여 숫자를 시각화 했습니다. 이 프로젝트는 제가 처음 취직한 회사에서 진행한 프로젝트입니다.
+                    </p>
+                    <p class="title-date">프로젝트 제작기간: 2020 ~ 2021</p>
+                </div>
+                <div class="project-grid dashboard-grid">
+                    <img src="./img/dashboard/dashboard1.png" alt="스마트팩토리 모니터링 대시보드">
+                    <img src="./img/dashboard/dashboard2.png" alt="스마트팩토리 모니터링 대시보드">
+                    <img src="./img/dashboard/dashboard3.png" alt="스마트팩토리 모니터링 대시보드">
+                    <img src="./img/dashboard/dashboard4.png" alt="스마트팩토리 모니터링 대시보드">
+                    <img src="./img/dashboard/dashboard5.png" alt="스마트팩토리 모니터링 대시보드">
+                    <img src="./img/dashboard/dashboard6.png" alt="스마트팩토리 모니터링 대시보드">
+                    <img src="./img/dashboard/dashboard7.png" alt="스마트팩토리 모니터링 대시보드">
+                </div>
+            </div>
+        </div>
+        <div class="modal-4 view-2">
+            <div class="modal-view">
+                <button type="button" class="modal-cls">본문으로 돌아가기</button>
+                <div class="project-title">
+                    <h3>Smart Factory ERP & MES</h3>
+                    <div class="chips">
+                        <b>Keywords:</b>
+                        <span>Vue.js</span>
+                        <span>Typescript</span>
+                        <span>Vuetify</span>
+                        <span>Sass & Scss</span>
+                        <span>Responsive</span>
+                        <span>Ajax</span>
+                        <span>Devexpress</span>
+                        <span>Dashboard</span>
+                        <span>MES</span>
+                        <span>ERP</span>
+                        <span>Admin page</span>
+                        <span>Data-Table Publishing</span>
+                        <span>Report Publishing</span>
+                    </div>
+                    <p>
+                        스마트 팩토리 ERP 및 MES 프로젝트에 참여하여 사무실 및 공장 근무자들이 사용할 수 있는 화면을 제작했습니다. 주로 POP(생산작업지시)를 입력하여 데이터
+                        공유를 하는 방식으로, 적응형 및 반응형 디자인을 활용했습니다. 관리자 페이지와 유사한 구조로, 데이터의 가독성을 높이기 위해 데이터 테이블(표) UI 연구를 하며
+                        제작했습니다. 또한 거래명세서 및 주문 입력 폼을 직접 입력하고 출력하는 기능이 많아 DevExpress의 리포트 프로그램을 활용하여 제작했습니다. 문서 프로그램의 사용을
+                        줄이고 하나의 솔루션으로 최대한 작업이 이루어지도록 신경 써서 작업했습니다.
+                    </p>
+                    <p class="title-date">프로젝트 제작기간: 2020 ~ 2021</p>
+                </div>
+                <div class="project-grid erp-grid">
+                    <img src="./img/dashboard/erp0.jpg" alt="스마트팩토리 erp mes">
+                    <img src="./img/dashboard/erp2.jpg" alt="스마트팩토리 erp mes">
+                    <img src="./img/dashboard/erp5.png" alt="스마트팩토리 erp mes">
+                    <img src="./img/dashboard/erp6.jpg" alt="스마트팩토리 erp mes">
+                    <img src="./img/dashboard/erp7.jpg" alt="스마트팩토리 erp mes">
+                    <img src="./img/dashboard/erp8.jpg" alt="스마트팩토리 erp mes">
+                    <img src="./img/dashboard/erp9.jpg" alt="스마트팩토리 erp mes">
+                    <img src="./img/dashboard/erp10.jpg" alt="스마트팩토리 erp mes">
+                </div>
+            </div>
+        </div>
+        <div class="modal-5 view-2">
+            <div class="modal-view">
+                <button type="button" class="modal-cls">본문으로 돌아가기</button>
+                <div class="project-title">
+                    <h3>Renewal Project</h3>
+                    <div class="chips">
+                        <b>Keywords:</b>
+                        <span>Responsive</span>
+                        <span>Renewal</span>
+                        <span>UI/UX</span>
+                        <span>Design</span>
+                        <span>HTML</span>
+                        <span>Css</span>
+                        <span>Js</span>
+                    </div>
+
+                    <p>기존 웹 솔루션을 사용하며 불편함을 느낀 사용자들의 의견을 반영하여 리뉴얼한 프로젝트들입니다. 지원이 종료 된 플래시를 제거하고 기능을 최대한 살려서 부분 리뉴얼, 서버
+                        이전하면서 홈페이지를 실수로 삭제한 고객의 홈페이지를 리뉴얼, 새로운 트렌드를 반영한 디자인을 원하는 고객의 홈페이지 리뉴얼 등 퍼블리셔의 손길이 필요한 부분이 많았습니다.
+                        저에게 가장 보람 있는 프로젝트라고 할 수 있습니다.</p>
+                    <p class="title-date">프로젝트 제작기간 : 2020 ~ 2024 </p>
+                </div>
+                <div class="project-grid renewal-grid">
+                    <img src="./img/renewal/01.png" alt="리뉴얼 사이트">
+                    <img src="./img/renewal/02.png" alt="리뉴얼 사이트">
+                    <img src="./img/renewal/03.png" alt="리뉴얼 사이트">
+                    <img src="./img/renewal/04.png" alt="리뉴얼 사이트">
+                    <img src="./img/renewal/05.png" alt="리뉴얼 사이트">
+                </div>
+            </div>
+        </div>
+        <svg class="overlay" width="100%" height="100%" viewBox="0 0 100 100" preserveAspectRatio="none">
+            <path class="overlay__path" vector-effect="non-scaling-stroke" d="M 0 100 V 100 Q 50 100 100 100 V 100 z"/>
+        </svg>
+    </div>
+
+
+    <footer id="footer">
+        <p class="copy">© 2024 Park Soi. All rights reserved.
+        </p>
+    </footer>
+</div>
+</body>
+</html>

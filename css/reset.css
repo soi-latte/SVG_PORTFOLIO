@@ -1,0 +1,102 @@
+body, html {
+    width: 100%;
+}
+
+article, blockquote, body, dd, div, dl, dt, fieldset, figcaption, figure, footer, form, h1, h2, h3, h4, h5, h6, header, hr address, input, li, nav, ol, p, pre, table, td, textarea, th, ul {
+    margin: 0;
+    padding: 0
+}
+
+article, figcaption, figure, footer, header {
+    display: block;
+    border-collapse: collapse
+}
+
+article, aside, figure, footer, header, main, nav, section {
+    display: block
+}
+
+fieldset, img {
+    border: none
+}
+
+address, caption, cite, code, em, strong, th {
+    font-style: normal;
+    font-weight: 400
+}
+
+ol, ul {
+    list-style: none
+}
+
+caption, th {
+    text-align: left
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-weight: 400
+}
+
+q:after, q:before {
+    content: ""
+}
+
+abbr, acronym {
+    border: none
+}
+
+button, img, input, label, select, textarea {
+    vertical-align: middle
+}
+
+hr {
+    display: none
+}
+
+.blind {
+    position: absolute;
+    left: 0;
+    width: 0;
+    height: 0;
+    font-size: 0;
+    line-height: 0;
+    text-indent: -9999px;
+    overflow: hidden
+}
+
+#skipnav {
+    margin: 0;
+    padding: 0
+}
+
+#skipnav a {
+    display: block;
+    overflow: hidden;
+    position: absolute;
+    left: 0;
+    top: -10000px
+}
+
+#skipnav a:active, #skipnav a:focus, #skipnav a:hover {
+    top: 0;
+    z-index: 1001;
+    padding: 15px 0;
+    background-color: #004b9d;
+    color: #fff;
+    font-size: 120%;
+    width: 100%;
+    text-align: center
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+button {
+    background: transparent;
+    box-shadow: none;
+    border: none;
+    cursor: pointer;
+    color: inherit;
+}
